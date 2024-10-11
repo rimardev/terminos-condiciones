@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*body {
+  background-color: #dfdfdf;
+}*/
+main {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h1 {
+  padding: 20px;
+  text-align: center;
+}
+p {
+  text-align: justify;
+}
+.btn {
+  width: 100px;
+  margin: auto;
+  padding: 5px 0px;
+  background-color: gray;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: white;
+}
+.msg {
+  text-align: center;
+}

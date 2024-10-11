@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="e">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terminos y Condiciones</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
   <main>
@@ -11,10 +12,24 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit corrupti beatae ab culpa placeat et natus ratione quos debitis optio! Veritatis ea provident deserunt non magnam illum facilis. Vel, corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cumque dolorem pariatur iure similique. Eius rerum laborum at ex tempore explicabo earum nobis molestiae ipsam aperiam quisquam, autem quod adipisci!</p>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima numquam soluta asperiores sint aliquam! Quod nulla ad sint? Quidem ad perspiciatis impedit vero soluta ducimus magni laudantium est quasi veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsum ratione eveniet impedit porro saepe. Quibusdam eligendi obcaecati molestias repudiandae pariatur dignissimos fugiat dolores quaerat? Quisquam aperiam culpa velit natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio illo voluptatum veritatis vero facere ut! A quibusdam alias enim incidunt nesciunt exercitationem sunt facilis! In ipsa magni fugit neque tenetur.</p>
     <div>
-      <input type="checkbox" name="tc" id="tc">
+      <input type="checkbox" name="tc" id="tc" onchange="
+        check = document.querySelector('#tc')
+        boton = document.querySelector('#btn')
+        if (check.checked === true){
+          boton.style.backgroundColor = 'royalblue'
+          boton.disabled = false
+        } else {
+          boton.style.backgroundColor = 'gray'
+          boton.disabled = true
+        }
+      ">
       <label for="tc">Leido</label>
     </div>    
-    <button class="btn">Aceptar</button>
+    <button class="btn" id="btn" disabled onclick="
+      msg = document.querySelector('.msg')
+      msg.innerHTML = 'Gracias por Aceptar'
+    ">Aceptar</button>
+    <p class="msg"></p>
   </main>
   
 </body>
