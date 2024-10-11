@@ -9,3 +9,6 @@ En esta práctica, se desarrolla una página web que presenta los Términos y Co
 El objetivo de esta funcionalidad es asegurar que el usuario interactúe con el contenido antes de continuar. Si el checkbox no está marcado, el botón de "Aceptar" permanecerá deshabilitado, impidiendo que el usuario proceda. Solo cuando el checkbox es seleccionado, el botón se activa, permitiendo al usuario aceptar los Términos y continuar con el proceso.
 
 Este comportamiento se implementa con HTML para estructurar el contenido, CSS para el diseño visual y JavaScript para manejar la lógica interactiva que activa el botón de aceptación. Esta práctica es una excelente introducción al uso combinado de estas tecnologías para crear interfaces web funcionales y amigables.
+
+### Screenshot
+![screenshot](https://github.com/rimardev/terminos-condiciones/blob/main/assets/img/screenshot.jpg)
